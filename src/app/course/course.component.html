@@ -1,0 +1,57 @@
+<h1 style="font-size: large;font-family: Arial, Helvetica, sans-serif; color: #369;">Course Details!</h1>
+
+<div class="panel panel-primary" *ngFor="let Course of CourseList" style="font-size: large;font-family: Arial, Helvetica, sans-serif; color: #369;" >
+    <div class="panel-heading">
+      <h3 class="panel-title">{{Course.courseName}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-xs-10">
+  
+        <div class="row vertical-align">
+          <div class="col-xs-8">
+  
+            <div class="row">
+              <div class="col-xs-6">
+                Course Id
+              </div>
+              <div class="col-xs-6">
+                : {{Course.courseId}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Name
+              </div>
+              <div class="col-xs-6">
+                : {{Course.courseName}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Course Duration
+              </div>
+              <div class="col-xs-6">
+                : {{Course.durationHours}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Pass Score
+              </div>
+              <div class="col-xs-6">
+                : {{Course.passScore}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                instructor Id
+              </div>
+              <div class="col-xs-6">
+                : {{Course.instructorId}}
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+</div>

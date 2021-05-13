@@ -1,0 +1,68 @@
+<h1 style="font-size: large;font-family: Arial, Helvetica, sans-serif; color: #369;">Faculty Details!</h1>
+
+
+<div class="panel panel-primary" style="font-size: large;font-family: Arial, Helvetica, sans-serif; color: #369;" *ngFor="let Faculty of FacultyList">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{Faculty.facultyName}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-xs-10">
+  
+        <div class="row vertical-align">
+          <div class="col-xs-8">
+  
+            <div class="row">
+              <div class="col-xs-6">
+                faculty Id
+              </div>
+              <div class="col-xs-6">
+                : {{Faculty.facultyId}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Name
+              </div>
+              <div class="col-xs-6">
+                : {{Faculty.facultyName}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Mobile
+              </div>
+              <div class="col-xs-6">
+                : {{Faculty.facultyMobile}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Email
+              </div>
+              <div class="col-xs-6">
+                : {{Faculty.facultyEmail}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Qualification
+              </div>
+              <div class="col-xs-6">
+                : {{Faculty.highestQualification}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Location
+              </div>
+              <div class="col-xs-6">
+                : {{Faculty.workLocation}}
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
